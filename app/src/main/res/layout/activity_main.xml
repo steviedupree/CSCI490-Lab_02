@@ -7,6 +7,7 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!"
@@ -20,9 +21,36 @@
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="105dp"
-        tools:layout_editor_absoluteY="445dp"
-        tools:ignore="MissingConstraints">
-    </Button>
+        tools:layout_editor_absoluteY="445dp"></Button>
+
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginBottom="46dp"
+        android:clickable="true"
+        android:src="@drawable/supermoon"
+        app:layout_constraintBottom_toTopOf="@+id/image2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.906"
+        tools:layout_editor_absoluteX="15dp">
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginBottom="139dp"
+        android:clickable="true"
+        android:src="@drawable/waterfall"
+        app:layout_constraintBottom_toTopOf="@+id/setBackground"
+        app:layout_constraintEnd_toEndOf="@+id/setBackground"
+        app:layout_constraintStart_toStartOf="@id/setBackground">
+
+    </ImageView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
